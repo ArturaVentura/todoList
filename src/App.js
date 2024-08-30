@@ -18,7 +18,9 @@ function App() {
   const handleAddTodo = () => {
     if (todoInput.trim() !== "") {
       if (editMode && editId !== null) {
-        // Редактирование существующей заметки
+
+        // Редактирование существующей заметки !
+
         const updatedTodos = todos.map((todo) =>
           todo.id === editId ? { ...todo, text: todoInput } : todo
         );
@@ -26,7 +28,9 @@ function App() {
         setEditMode(false);
         setEditId(null);
       } else {
-        // Добавление новой заметки
+
+  //  Добавление новой заметки !!!
+
         const newTodo = {
           id: todos.length + 1,
           text: todoInput,
